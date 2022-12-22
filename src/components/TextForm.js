@@ -12,13 +12,7 @@ export default function TextForm(props) {
   const handleOnChange = (e) =>{
     setText(e.target.value)
   }
-  const handleCopy = () => {
-    let text = document.getElementById('myBox');
-    text.select()
-    text.setSelectionRange(0, 9999);
-    navigator.clipboard.writeText(text.value)
-    // props.showAlert('Copied in clipboard', 'success')
-  }
+
   const handleRemoveSpaces = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "))
@@ -39,7 +33,6 @@ export default function TextForm(props) {
         </div>
         <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
         <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to Lowercase</button>
-        <button className="btn btn-primary mx-2" onClick={handleCopy}>Copy to clipboard</button>
         <button className="btn btn-primary mx-2" onClick={handleRemoveSpaces}>Remove extra spaces</button>
         <button className="btn btn-primary mx-2" onClick={handleClear}>Clear</button>
     </div>
