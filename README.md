@@ -1,5 +1,5 @@
 # react-text-analyzer
-Sample react project to analyze text
+Sample react project to analyze text. Live here(https://dkjhaj2ee.github.io/react-text-analyzer/)
 
 ***
 
